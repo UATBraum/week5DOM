@@ -1,0 +1,44 @@
+body{
+    background-image: url('jameswebb.jpg');
+    background-size: cover;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#countdownStatus{
+    font-size: 3em;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 5px;
+}
+#uatLogo{
+    margin:auto;
+}
+#countdownTimer{
+    margin:auto;
+}
+#crapsTable{
+    margin: auto;
+}
+#data{
+    background-color: rgb(22, 27, 27);
+    margin:auto;
+}
+#spacestationSounds{
+    margin:auto;
+}
+.largeButton{
+    width: 300px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 5px;
+}

@@ -1,0 +1,14 @@
+body{
+    background-color: lightgray;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 5px;
+}
+#loginTable{
+    margin: auto;
+}

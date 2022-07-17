@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Week 4
+Assignment: Sounds
+Sam Smith
+samsmit1@uat.edu-->
+<html>
+    <head>
+        <!--Link js and css for login page-->
+        <script src="loginCode.js"></script>
+        <link rel="stylesheet" href="loginStyle.css">
+        <!--top bar information-->
+        <title>
+            UAT Space Login Page
+        </title>
+    </head>
+    <body>
+        <!--Table for login information-->
+        <table id="loginTable">
+            <tr><td>
+        <h1>Welcome to UATSpace Logn Page</h1>
+        Please Log in Below
+        <br><br>
+    </td></tr>
+        <tr><td>
+        <div id="loginStatus">Login Status</div>
+        <br><br>
+    </td></tr>
+        <tr><td>
+        <form id="creditSumbit" onsubmit="return false">
+            First Name: <input type="text" id="fName"> <br>
+            Last Name: <input type="text" id="lName"> <br>
+            Badge Number: <input type="number" id="badgeID"> <br>
+        </td></tr>
+        <tr><td>
+            <br>
+        <input type="submit" onclick="checkCreds();" class="button"><br>
+        </td></tr>
+        </table>
+
+        </form>
+
+    </body>
+</html>

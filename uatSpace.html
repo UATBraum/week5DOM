@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--Week 4
+Assignment: Sounds 
+Sam Smith
+samsmit1@uat.edu-->
+<html>
+
+<head>
+    <script src="code.js"></script>
+    <script src="launchDataDisplay.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="dataLoader-1.js"></script>
+    <title>
+        Sam UAT Space Page
+    </title>
+    <!--collect date to see if table needs updates-->
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+</head>
+
+<body>
+    <!--Table to hold UAT Space Logo and header text-->
+    <table id="uatLogo">
+        <!--First row contains logo-->
+        <tr>
+            <td>
+                <img src="UATspacelogo.jpg">
+            </td>
+
+        </tr>
+        <!--Second row contains Title of space program-->
+        <tr>
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <!--Data Table-->
+    <table id="data" border="3" width="70%">
+        <!--Header of data table-->
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>
+                Data Type
+            </th>
+            <th>
+                Reading
+            </th>
+        </thead>
+        <!--Body of data table-->
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"></tr>
+            <tr id="longitude"></tr>
+            <!--GPS Tables Entrys-->
+            <tr id="gpsAltitude"></tr>
+            <!--BMP Tables Entrys-->
+            <tr id="bmpAltitude"></tr>
+            <tr id="bmpPressure"></tr>
+            <tr id="bmpTemperature"></tr>
+            <!--Digi Tables Entrys-->
+            <tr id="digiTemperature"></tr>
+            <!--CSS Tables Entrys-->
+            <tr id="cssTemperature"></tr>
+            <tr id="cssECO2"></tr>
+            <tr id="cssTVOC"></tr>
+            <!--UV Tables Entrys-->
+            <tr id="UV"> </tr>
+            <!--Accelerometer Tables Entrys-->
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <!--Magnetic Tables Entrys-->
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <!--Gyro Tables Entrys-->
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+    <br>
+    <!--Table for Countdown Timer-->
+    <table id="countdownTimer">
+        <!--Start/Stop Buttons-->
+        <tr>
+            <td>
+                <button onclick="startFun();" class="button" id="startButton">Start</button>
+                <button onclick="stopFun();" class="button" id="stopButton">Stop</button>
+            </td>
+        </tr>
+        <br>
+    </table>
+
+    <!--
+        Four our craps on html side we need:
+        1) button to play craps
+        2) Crap status line
+        3) Header saying craps played here
+
+        the story of our craps game...
+        At least 3-4 sentances
+
+        Interstellar warp travel can be taxing on the mind and body.
+        Notcing the toll on the crews body Captain Gallahorn instructed the on board Tech Priest 
+        to run a craps game in the mess hall every other day. Moral has improved significatly since its
+        implimetation
+        -->
+    <table id="crapsTable">
+        <!--Craps table Title-->
+        <tr>
+            <td>
+                <h2>Please try your hand at Craps!</h2>
+            </td>
+        </tr>
+        <!--Craps Victory Status-->
+        <tr>
+            <td>
+                <div id="crapsStatus">Craps Status</div>
+            </td>
+        </tr>
+        <!--Craps Play button-->
+        <tr>
+            <td>
+                <button onclick="playCraps();" class="button">Play Craps</button>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <table id="spacestationSounds">
+        <!--Space Station Sound Title-->
+        <tr>
+            <td>
+                <h3>Play Station Sounds</h3>
+                <h4>Warning! Things may get loud!</h4>
+            </td>
+        </tr>
+        <!--Space Station SOund BUtton-->
+        <tr>
+            <td>
+                <button onclick="playStation();" class="largeButton" id="spacestationSounds">Play Station
+                    Sounds</button>
+            </td>
+        </tr>
+        <br>
+        <!--Embedded YOutube VIdeo for fun-->
+        <td>
+            <tr>
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Qg6BwvDcANg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></center>
+            </tr>
+        </td>
+    </table>
+
+</body>
+
+</html>
